@@ -4,11 +4,13 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
+.header-bar a,
 .header-bar div {
-  margin: 5px;
+  margin: 1%;
   font-size: 12px;
   color: white;
 }
