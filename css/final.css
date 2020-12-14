@@ -1,0 +1,27 @@
+.final {
+  opacity: 0;
+}
+
+@keyframes send {
+  0% {
+    transform: scale(2) rotateY(90deg);
+    opacity: 0;
+  }
+
+  50% {
+    transform: rotate(360deg);
+  }
+}
+
+.final-pad div {
+  width: 50%;
+  height: 35vh;
+  display: flex;
+  margin-top: 10vh;
+  justify-content: center;
+  align-items: center;
+  animation: send 2s ease-in-out;
+  color: rgb(146, 9, 9);
+  border-radius: 5px;
+  box-shadow: 0px 5px 20px rgb(252, 143, 124);
+}

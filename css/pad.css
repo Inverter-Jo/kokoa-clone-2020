@@ -1,0 +1,86 @@
+.writing-pad {
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  margin-top: 10vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.writing-pad textarea,
+.writing-pad div {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+  text-align: initial;
+  word-wrap: break-word;
+  border: none;
+  outline: none;
+  white-space: nowrap;
+  background-image: linear-gradient(
+    110deg,
+    #d0d4ef 0,
+    #d5d3ee 4.17%,
+    #d9d2ec 8.33%,
+    #ddd1ea 12.5%,
+    #e1d0e8 16.67%,
+    #e5cfe5 20.83%,
+    #e8cee2 25%,
+    #ebcedf 29.17%,
+    #edcddb 33.33%,
+    #efcdd8 37.5%,
+    #f1cdd4 41.67%,
+    #f2cdd0 45.83%,
+    #f2cdcd 50%,
+    #f2cdca 54.17%,
+    #f1cec7 58.33%,
+    #f0cfc4 62.5%,
+    #eed0c1 66.67%,
+    #ecd0bf 70.83%,
+    #e9d2be 75%,
+    #e6d3bd 79.17%,
+    #e3d4bc 83.33%,
+    #e0d5bc 87.5%,
+    #dcd6bc 91.67%,
+    #d8d7bd 95.83%,
+    #d4d8be 100%
+  );
+}
+
+.sending-letter {
+  width: 25px;
+  height: 25px;
+  background-color: teal;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@keyframes letter {
+  0% {
+    transform: rotatex(90deg);
+    opacity: 0;
+  }
+}
+
+@keyframes o {
+  0% {
+    opacity: 0;
+  }
+}
+
+.writing-pad textarea {
+  animation: letter 2s ease-in-out;
+}
+
+.second {
+  animation: o 2s ease-in-out;
+}
+
+.writing-pad textarea {
+  box-shadow: 0px 5px 10px rgb(255, 229, 224);
+  border-radius: 5px;
+}

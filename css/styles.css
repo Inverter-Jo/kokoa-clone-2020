@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "reset.css";
+@import "home.css";
+@import "pad.css";
+@import "final.css";
 
 /*components*/
 @import "components/headerbar.css";
@@ -10,13 +13,6 @@ body {
   box-sizing: border-box;
 }
 
-h1 {
-  font-size: xx-large;
-  font-weight: 600;
-  margin-top: 15%;
-  color: rgb(255, 208, 215);
-}
-
 body {
   height: 100vh;
   display: flex;
@@ -25,87 +21,6 @@ body {
   flex-direction: column;
 }
 
-.form {
-  width: 50%;
-  height: 50px;
-  position: relative;
-}
-
-.form input {
-  width: 100%;
-  height: 100%;
-  color: rgba(0, 0, 0, 0.4);
-  padding-top: 20px;
-  border: none;
-}
-
-.form label {
-  position: absolute;
-  bottom: 0px;
-  left: 0%;
-  width: 100%;
-  height: 100%;
-  pointer-events: none;
-  border-bottom: 1px solid black;
-}
-
-.form label::after {
-  content: "";
-  position: absolute;
-  bottom: -1px;
-  left: 0px;
-  height: 100%;
-  width: 100%;
-  border-bottom: 3px solid orange;
-  transform: translateX(-100%);
-  transition: all 0.3s ease;
-}
-
-.content-name {
-  position: absolute;
-  bottom: 5px;
-  left: 0px;
-  transition: all 0.3s ease;
-}
-
-.form input:focus + .label-name .content-name,
-.form input:valid + .label-name .content-name {
-  transform: translateY(-150%);
-  font-size: 14px;
-  color: orange;
-}
-
-.form input:focus + .label-name::after,
-.form input:valid + .label-name::after {
-  transform: translateX(0%);
-}
-
-.nav {
-  position: relative;
-  bottom: 0px;
-  width: 20%;
-  box-sizing: border-box;
-}
-
-.nav__list {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  list-style: none;
-  height: 150px;
-}
-
-.nav__circle {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 25px;
-  width: 25px;
-  border-radius: 50%;
-  background-color: paleturquoise;
-}
-
-.nav__circle i {
-  color: teal;
+a > i {
+  box-shadow: 0px 5px 20px rgb(252, 143, 124);
 }
