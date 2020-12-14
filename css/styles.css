@@ -1,6 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
 @import "reset.css";
 
+/*components*/
+@import "components/headerbar.css";
+
 body {
   color: #2e363e;
   font-family: "Open Sans", sans-serif;
@@ -10,11 +13,12 @@ body {
 h1 {
   font-size: xx-large;
   font-weight: 600;
+  margin-top: 15%;
   color: rgb(255, 208, 215);
 }
 
 body {
-  height: 60vh;
+  height: 100vh;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -74,4 +78,34 @@ body {
 .form input:focus + .label-name::after,
 .form input:valid + .label-name::after {
   transform: translateX(0%);
+}
+
+.nav {
+  position: relative;
+  bottom: 0px;
+  width: 20%;
+  box-sizing: border-box;
+}
+
+.nav__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+  height: 150px;
+}
+
+.nav__circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: paleturquoise;
+}
+
+.nav__circle i {
+  color: teal;
 }
